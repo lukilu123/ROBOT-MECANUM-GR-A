@@ -1,0 +1,32 @@
+[1.011s] Invoking command in '/home/user/project_ws/build/my_project_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/project_ws/build/my_project_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/user/project_ws/build/my_project_pkg/build --no-deps symlink_data --force
+[1.381s] running develop
+[1.657s] running egg_info
+[1.689s] writing my_project_pkg.egg-info/PKG-INFO
+[1.692s] writing dependency_links to my_project_pkg.egg-info/dependency_links.txt
+[1.692s] writing entry points to my_project_pkg.egg-info/entry_points.txt
+[1.692s] writing requirements to my_project_pkg.egg-info/requires.txt
+[1.692s] writing top-level names to my_project_pkg.egg-info/top_level.txt
+[1.745s] reading manifest file 'my_project_pkg.egg-info/SOURCES.txt'
+[1.745s] writing manifest file 'my_project_pkg.egg-info/SOURCES.txt'
+[1.770s] running build_ext
+[1.770s] Creating /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my-project-pkg.egg-link (link to .)
+[1.770s] Installing my_publisher script to /home/user/project_ws/install/my_project_pkg/lib/my_project_pkg
+[1.771s] Installing my_subscriber script to /home/user/project_ws/install/my_project_pkg/lib/my_project_pkg
+[1.771s] Installing say_hi script to /home/user/project_ws/install/my_project_pkg/lib/my_project_pkg
+[1.771s] 
+[1.771s] Installed /home/user/project_ws/build/my_project_pkg
+[1.771s] running symlink_data
+[1.771s] symbolically linking /home/user/project_ws/build/my_project_pkg/resource/my_project_pkg -> /home/user/project_ws/install/my_project_pkg/share/ament_index/resource_index/packages
+[1.771s] symbolically linking /home/user/project_ws/build/my_project_pkg/package.xml -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg
+[1.772s] symbolically linking /home/user/project_ws/build/my_project_pkg/launch/display.launch.py -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/launch
+[1.772s] symbolically linking /home/user/project_ws/build/my_project_pkg/model/robot.urdf.xacro -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model
+[1.772s] symbolically linking /home/user/project_ws/build/my_project_pkg/model/meshes/BRD.STL -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[1.773s] symbolically linking /home/user/project_ws/build/my_project_pkg/model/meshes/BRI.STL -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[1.773s] symbolically linking /home/user/project_ws/build/my_project_pkg/model/meshes/ARD.STL -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[1.774s] symbolically linking /home/user/project_ws/build/my_project_pkg/model/meshes/ARI.STL -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[1.774s] symbolically linking /home/user/project_ws/build/my_project_pkg/model/meshes/CHASSISFULL.stl -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[1.774s] symbolically linking /home/user/project_ws/build/my_project_pkg/model/meshes/ACTUADORFINAL1.stl -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[1.774s] symbolically linking /home/user/project_ws/build/my_project_pkg/model/meshes/PALASV2.stl -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[1.774s] symbolically linking /home/user/project_ws/build/my_project_pkg/model/urdf/URDFMODELFULL.urdf -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/urdf
+[1.774s] symbolically linking /home/user/project_ws/build/my_project_pkg/config/my_config.rviz -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/config
+[1.808s] Invoked command in '/home/user/project_ws/build/my_project_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/project_ws/build/my_project_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/user/project_ws/build/my_project_pkg/build --no-deps symlink_data --force

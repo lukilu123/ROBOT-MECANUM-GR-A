@@ -1,0 +1,19 @@
+[4.917s] Invoking command in '/home/user/project_ws/build/my_project_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/project_ws/build/my_project_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/user/project_ws/build/my_project_pkg/build --no-deps symlink_data
+[6.313s] running develop
+[7.416s] running egg_info
+[7.553s] writing my_project_pkg.egg-info/PKG-INFO
+[7.556s] writing dependency_links to my_project_pkg.egg-info/dependency_links.txt
+[7.556s] writing entry points to my_project_pkg.egg-info/entry_points.txt
+[7.557s] writing requirements to my_project_pkg.egg-info/requires.txt
+[7.558s] writing top-level names to my_project_pkg.egg-info/top_level.txt
+[7.868s] reading manifest file 'my_project_pkg.egg-info/SOURCES.txt'
+[7.885s] writing manifest file 'my_project_pkg.egg-info/SOURCES.txt'
+[8.006s] running build_ext
+[8.006s] Creating /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my-project-pkg.egg-link (link to .)
+[8.010s] Installing my_publisher script to /home/user/project_ws/install/my_project_pkg/lib/my_project_pkg
+[8.010s] Installing my_subscriber script to /home/user/project_ws/install/my_project_pkg/lib/my_project_pkg
+[8.010s] Installing say_hi script to /home/user/project_ws/install/my_project_pkg/lib/my_project_pkg
+[8.010s] 
+[8.010s] Installed /home/user/project_ws/build/my_project_pkg
+[8.010s] running symlink_data
+[8.309s] Invoked command in '/home/user/project_ws/build/my_project_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/project_ws/build/my_project_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/user/project_ws/build/my_project_pkg/build --no-deps symlink_data
