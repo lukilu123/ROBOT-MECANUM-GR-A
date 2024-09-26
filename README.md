@@ -9,26 +9,29 @@ EN LA TERMINAL DE UBUNTU
 
 luego
 
-user@ubuntu:~$ cd ROBOT-MECANUM-GR-A
-user@ubuntu:~/ROBOT-MECANUM-GR-A$ git branch
+cd ROBOT-MECANUM-GR-A
+//
+git branch
 * main
-user@ubuntu:~/ROBOT-MECANUM-GR-A$ git checkout master
+//
+git checkout master
+
 rama 'master' configurada para rastrear 'origin/master'.
 Cambiado a nueva rama 'master'
-user@ubuntu:~/ROBOT-MECANUM-GR-A$ git branch
+//
+git branch
   main
 * master
-user@ubuntu:~/ROBOT-MECANUM-GR-A$ git pull master
-fatal: 'master' does not appear to be a git repository
-fatal: No se pudo leer del repositorio remoto.
+//
+git pull origin master
 
-Por favor asegúrate de que tengas los permisos de acceso correctos
-y que el repositorio exista.
-user@ubuntu:~/ROBOT-MECANUM-GR-A$ git pull origin master
 Desde https://github.com/lukilu123/ROBOT-MECANUM-GR-A
  * branch            master     -> FETCH_HEAD
 Ya está actualizado.
-user@ubuntu:~/ROBOT-MECANUM-GR-A$ 
+
+ROBOT-MECANUM-GR-A$
+
+CON ESTO SE PUEDEN VER LOS ARCHIVOS
 
 ----------------------------------------------------
 PROYECTO REALIZADO EN;
