@@ -9,26 +9,27 @@ EN LA TERMINAL DE UBUNTU
 
 luego
 
-Cambiar a la rama master: Después de clonar, navega a la carpeta del repositorio y cámbiate a la rama master:
+user@ubuntu:~$ cd ROBOT-MECANUM-GR-A
+user@ubuntu:~/ROBOT-MECANUM-GR-A$ git branch
+* main
+user@ubuntu:~/ROBOT-MECANUM-GR-A$ git checkout master
+rama 'master' configurada para rastrear 'origin/master'.
+Cambiado a nueva rama 'master'
+user@ubuntu:~/ROBOT-MECANUM-GR-A$ git branch
+  main
+* master
+user@ubuntu:~/ROBOT-MECANUM-GR-A$ git pull master
+fatal: 'master' does not appear to be a git repository
+fatal: No se pudo leer del repositorio remoto.
 
-bash
+Por favor asegúrate de que tengas los permisos de acceso correctos
+y que el repositorio exista.
+user@ubuntu:~/ROBOT-MECANUM-GR-A$ git pull origin master
+Desde https://github.com/lukilu123/ROBOT-MECANUM-GR-A
+ * branch            master     -> FETCH_HEAD
+Ya está actualizado.
+user@ubuntu:~/ROBOT-MECANUM-GR-A$ 
 
-cd ROBOT-MECANUM-GR-A
-git checkout master
-
-Verifica que estés en la rama master: Asegúrate de que estás en la rama correcta ejecutando:
-
-bash
-
-git branch
-
-Deberías ver un asterisco * junto a la rama master, indicando que estás en la rama correcta.
-
-Pull de la rama master para asegurarte de tener los archivos más recientes:
-
-bash
-
-git pull origin master
 ----------------------------------------------------
 PROYECTO REALIZADO EN;
 UBUNTU 24.0.4
