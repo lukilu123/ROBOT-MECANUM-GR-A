@@ -1,0 +1,59 @@
+comandos importantes;
+ros: comando movimiento robot;
+
+para omni direccional; Rotación -
+
+ros2 topic pub --rate 10 /cmd_vel geometry_msgs/msg/Twist "{linear: {x: -0.1, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -0.1}}"
+
+------------------------------------------------------------------------------
+para omni direccional; Rotación +
+
+ros2 topic pub --rate 10 /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.1, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.1}}"
+
+------------------------------------------------------------------------------
+para omni direccional; traslación -Y
+
+ros2 topic pub --rate 10 /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: -0.1, z: 0.0}, angular: {x: 0.0, y: -0.1, z: 0.0}}"
+------------------------------------------------------------------------------
+
+
+para omni direccional; traslación +Y
+
+ros2 topic pub --rate 10 /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0.1, z: 0.0}, angular: {x: 0.0, y: 0.1, z: 0.0}}"
+------------------------------------------------------------------------------
+para omni direccional; traslación +X
+
+ros2 topic pub --rate 10 /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.1, y: 0.0, z: 0.0}, angular: {x: 0.1, y: 0.0, z: 0.0}}"
+
+------------------------------------------------------------------------------
+para omni direccional; traslación -X
+
+ros2 topic pub --rate 10 /cmd_vel geometry_msgs/msg/Twist "{linear: {x: -0.1, y: 0.0, z: 0.0}, angular: {x: -0.1, y: 0.0, z: 0.0}}"
+
+------------------------------------------------------------------------------
+para omni direccional; giro +
+
+ros2 topic pub --rate 10 /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0.0, z: 0.2}, angular: {x: 0.0, y: 0.0, z: 0.2}}"
+
+------------------------------------------------------------------------------
+para omni direccional; giro -
+
+ros2 topic pub --rate 10 /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0.0, z: -0.2}, angular: {x: 0.0, y: 0.0, z: -0.2}}"
+
+------------------------------------------------------------------------------
+
+colcon build --symlink-install
+
+compilar
+
+source install/setup.bash
+
+'sourcear'
+
+ros2 launch my_project_pkg display.launch.py
+
+'lanzar'
+
+de momento solo se puede visualizar los comp con este comando previo a ls de mov #$%#$&$%!!!!
+####ros2 run joint_state_publisher_gui joint_state_publisher_gui
+

@@ -11,6 +11,7 @@ setup.py
 config/my_config.rviz
 launch/display.launch.py
 model/robot.urdf.xacro
+model/meshes/ACTUADORCORTO.stl
 model/meshes/ACTUADORFINAL1.stl
 model/meshes/ARD.STL
 model/meshes/ARI.STL

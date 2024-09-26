@@ -262,7 +262,7 @@
   </joint>
   <!--CARCASA INSERTAR ACTUADOR-->
   <link
-    name="ACTUADORFINAL1">
+    name="ACTUADORCORTO">
     <inertial>
       <origin
         xyz="0 0 0"
@@ -283,7 +283,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_project_pkg/model/meshes/ACTUADORFINAL1.stl" scale="0.0025 0.0025 0.0025" />
+          filename="package://my_project_pkg/model/meshes/ACTUADORCORTO.stl" scale="0.0025 0.0025 0.0025" />
       </geometry>
       <material
         name="">
@@ -297,12 +297,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_project_pkg/model/meshes/ACTUADORFINAL1.stl" scale="0.0025 0.0025 0.0025" />
+          filename="package://my_project_pkg/model/meshes/ACTUADORCORTO.stl" scale="0.0025 0.0025 0.0025" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="ACTUADORFINAL1_joint"
+    name="ACTUADORCORTO_joint"
     type="fixed">
     <origin
       xyz="0 0 0.26"
@@ -310,7 +310,7 @@
     <parent
       link="CHASSISFULL" />
     <child
-      link="ACTUADORFINAL1" />
+      link="ACTUADORCORTO" />
     <axis
       xyz="0 0 -1" />
   </joint>
@@ -364,7 +364,7 @@
       xyz="0 0 0.26"
       rpy="0 0 0" />
     <parent
-      link="CHASSISFULL" />
+      link="ACTUADORCORTO" />
     <child
       link="PALASV2" />
     <axis
