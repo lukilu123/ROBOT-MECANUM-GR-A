@@ -18,7 +18,12 @@ model/meshes/ARI.STL
 model/meshes/BRD.STL
 model/meshes/BRI.STL
 model/meshes/CHASSISFULL.stl
+model/meshes/CUERPO1.stl
+model/meshes/LIDAR.stl
 model/meshes/PALASV2.stl
+model/meshes/SOPORTE1.stl
+model/meshes/SOPORTE2.stl
+model/urdf/GZMODEL.urdf
 model/urdf/URDFMODELFULL.urdf
 my_project_pkg/__init__.py
 my_project_pkg/my_robot_controller.py

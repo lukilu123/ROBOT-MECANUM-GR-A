@@ -37,11 +37,11 @@ def generate_launch_description():
     )
     
     # (NODO)crea un lanzador para joint_state_publisher_gui
-    #launch_joint_state_publisher_gui= Node(
-        #package='joint_state_publisher_gui',
-        #executable='joint_state_publisher_gui',
-        #name='joint_state_publisher_gui',
-    #)
+    launch_joint_state_publisher_gui= Node(
+        package='joint_state_publisher_gui',
+        executable='joint_state_publisher_gui',
+        name='joint_state_publisher_gui',
+    )
 
     # (NODO)crea un lanzador 
     my_robot_controller= Node(
@@ -56,6 +56,7 @@ def generate_launch_description():
             description='Use sim time if true'),
         launch_robot_state_publisher_node,
         launch_rviz2,
-        #launch_joint_state_publisher_gui,
+        launch_joint_state_publisher_gui,
         my_robot_controller,
+        
     ])

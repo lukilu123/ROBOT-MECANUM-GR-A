@@ -1,0 +1,56 @@
+[1.137s] Invoking command in '/home/user/project_ws/build/my_project_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/project_ws/build/my_project_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/user/project_ws/build/my_project_pkg/build
+[1.487s] running develop
+[1.737s] Removing /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my-project-pkg.egg-link (link to .)
+[1.768s] Invoked command in '/home/user/project_ws/build/my_project_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/project_ws/build/my_project_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/user/project_ws/build/my_project_pkg/build
+[1.769s] Invoking command in '/home/user/project_ws/src/my_project_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/project_ws/build/my_project_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_project_pkg build --build-base /home/user/project_ws/build/my_project_pkg/build install --record /home/user/project_ws/build/my_project_pkg/install.log --single-version-externally-managed install_data --force
+[2.082s] running egg_info
+[2.105s] writing ../../build/my_project_pkg/my_project_pkg.egg-info/PKG-INFO
+[2.106s] writing dependency_links to ../../build/my_project_pkg/my_project_pkg.egg-info/dependency_links.txt
+[2.106s] writing entry points to ../../build/my_project_pkg/my_project_pkg.egg-info/entry_points.txt
+[2.106s] writing requirements to ../../build/my_project_pkg/my_project_pkg.egg-info/requires.txt
+[2.106s] writing top-level names to ../../build/my_project_pkg/my_project_pkg.egg-info/top_level.txt
+[2.155s] reading manifest file '../../build/my_project_pkg/my_project_pkg.egg-info/SOURCES.txt'
+[2.156s] writing manifest file '../../build/my_project_pkg/my_project_pkg.egg-info/SOURCES.txt'
+[2.157s] running build
+[2.157s] running build_py
+[2.158s] running install
+[2.164s] running install_lib
+[2.201s] creating /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my_project_pkg
+[2.202s] copying /home/user/project_ws/build/my_project_pkg/build/lib/my_project_pkg/subscriber.py -> /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my_project_pkg
+[2.203s] copying /home/user/project_ws/build/my_project_pkg/build/lib/my_project_pkg/my_robot_controller.py -> /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my_project_pkg
+[2.203s] copying /home/user/project_ws/build/my_project_pkg/build/lib/my_project_pkg/say_hi.py -> /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my_project_pkg
+[2.204s] copying /home/user/project_ws/build/my_project_pkg/build/lib/my_project_pkg/publisher.py -> /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my_project_pkg
+[2.206s] copying /home/user/project_ws/build/my_project_pkg/build/lib/my_project_pkg/__init__.py -> /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my_project_pkg
+[2.206s] byte-compiling /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my_project_pkg/subscriber.py to subscriber.cpython-312.pyc
+[2.207s] byte-compiling /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my_project_pkg/my_robot_controller.py to my_robot_controller.cpython-312.pyc
+[2.209s] byte-compiling /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my_project_pkg/say_hi.py to say_hi.cpython-312.pyc
+[2.210s] byte-compiling /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my_project_pkg/publisher.py to publisher.cpython-312.pyc
+[2.212s] byte-compiling /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my_project_pkg/__init__.py to __init__.cpython-312.pyc
+[2.212s] running install_data
+[2.212s] copying resource/my_project_pkg -> /home/user/project_ws/install/my_project_pkg/share/ament_index/resource_index/packages
+[2.213s] copying package.xml -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg
+[2.213s] copying launch/display.launch.py -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/launch
+[2.214s] copying model/robot.urdf.xacro -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model
+[2.215s] copying model/meshes/BRD.STL -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[2.219s] copying model/meshes/BRI.STL -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[2.223s] copying model/meshes/ARD.STL -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[2.248s] copying model/meshes/ARI.STL -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[2.268s] copying model/meshes/ACTUADORCORTO.stl -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[2.273s] copying model/meshes/SOPORTE1.stl -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[2.275s] copying model/meshes/LIDAR.stl -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[2.275s] copying model/meshes/SOPORTE2.stl -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[2.276s] copying model/meshes/CUERPO1.stl -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[2.278s] copying model/meshes/CHASSISFULL.stl -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[2.278s] copying model/meshes/ACTUADORFINAL1.stl -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[2.281s] copying model/meshes/PALASV2.stl -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/meshes
+[2.283s] copying model/urdf/URDFMODELFULL.urdf -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/model/urdf
+[2.283s] copying config/my_config.rviz -> /home/user/project_ws/install/my_project_pkg/share/my_project_pkg/config
+[2.284s] running install_egg_info
+[2.319s] Copying ../../build/my_project_pkg/my_project_pkg.egg-info to /home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages/my_project_pkg-0.0.1-py3.12.egg-info
+[2.322s] running install_scripts
+[2.494s] Installing my_publisher script to /home/user/project_ws/install/my_project_pkg/lib/my_project_pkg
+[2.496s] Installing my_robot_controller script to /home/user/project_ws/install/my_project_pkg/lib/my_project_pkg
+[2.497s] Installing my_subscriber script to /home/user/project_ws/install/my_project_pkg/lib/my_project_pkg
+[2.497s] Installing say_hi script to /home/user/project_ws/install/my_project_pkg/lib/my_project_pkg
+[2.497s] writing list of installed files to '/home/user/project_ws/build/my_project_pkg/install.log'
+[2.536s] Invoked command in '/home/user/project_ws/src/my_project_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user/project_ws/build/my_project_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/project_ws/install/my_project_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_project_pkg build --build-base /home/user/project_ws/build/my_project_pkg/build install --record /home/user/project_ws/build/my_project_pkg/install.log --single-version-externally-managed install_data --force

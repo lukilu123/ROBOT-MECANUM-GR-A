@@ -35,7 +35,7 @@ glob(os.path.join('config', '*.*'))),
             'say_hi = my_project_pkg.say_hi:main',
             'my_publisher = my_project_pkg.publisher:main',
             'my_subscriber = my_project_pkg.subscriber:main',
-            'my_robot_controller = my_project_pkg.my_robot_controller:main'
+            'my_robot_controller = my_project_pkg.my_robot_controller:main',
         ],
     },
 )

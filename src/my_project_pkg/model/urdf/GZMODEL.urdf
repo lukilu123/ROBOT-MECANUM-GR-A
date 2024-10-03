@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! 
+     Edited by @cmoralesd, july 2024
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robotgz
+  name="ROBOT_urdf">
+  <!-- Dummy -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.01 0.01 0.01"/> <!-- Tamaño arbitrario, ya que no lo verás -->
+      </geometry>
+    </visual>
+  </link>
+  <!-- Dummy -->
+  <link
+    name="CHASSISFULL">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.30841" />
+      <inertia
+        ixx="0.00015661"
+        ixy="-1.7004E-07"
+        ixz="3.939E-07"
+        iyy="0.00045596"
+        iyz="8.2607E-08"
+        izz="0.00038161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0.26"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/CHASSISFULL.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.1 0.1 0.1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0.26"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/CHASSISFULL.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+    </collision>
+  </link>
+   <!-- Joint between the dummy link and CHASSISFULL -->
+  <joint name="base_to_chassis" type="fixed">
+    <parent link="base_link" />
+    <child link="CHASSISFULL" />
+    <origin xyz="0 0 0" rpy="0 0 0" /> <!-- Ubicación del enlace CHASSISFULL respecto al dummy link -->
+  </joint>
+    <!--CARCAZA-->
+  <link
+    name="CUERPO1">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.30841" />
+      <inertia
+        ixx="0.00015661"
+        ixy="-1.7004E-07"
+        ixz="3.939E-07"
+        iyy="0.00045596"
+        iyz="8.2607E-08"
+        izz="0.00038161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/CUERPO1.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.1 0.1 0.1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/CUERPO1.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="CUERPO1_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.26"
+      rpy="0 0 0" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="CUERPO1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>  
+    <!--SOPORTE1-->
+  <link
+    name="SOPORTE1">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.30841" />
+      <inertia
+        ixx="0.00015661"
+        ixy="-1.7004E-07"
+        ixz="3.939E-07"
+        iyy="0.00045596"
+        iyz="8.2607E-08"
+        izz="0.00038161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/SOPORTE1.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/SOPORTE1.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="SOPORTE1_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.26"
+      rpy="0 0 0" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="SOPORTE1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>   
+    <!--SOPORTE2-->
+    <link
+    name="SOPORTE2">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.30841" />
+      <inertia
+        ixx="0.00015661"
+        ixy="-1.7004E-07"
+        ixz="3.939E-07"
+        iyy="0.00045596"
+        iyz="8.2607E-08"
+        izz="0.00038161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/SOPORTE2.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/SOPORTE2.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="SOPORTE2_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.26"
+      rpy="0 0 0" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="SOPORTE2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint> 
+    <!--LIDAR-->
+  <link
+    name="LIDAR">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.30841" />
+      <inertia
+        ixx="0.00015661"
+        ixy="-1.7004E-07"
+        ixz="3.939E-07"
+        iyy="0.00045596"
+        iyz="8.2607E-08"
+        izz="0.00038161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/LIDAR.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/LIDAR.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LIDAR_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.26"
+      rpy="0 0 0" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="LIDAR" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>   
+    <!--RUEDA DER A-->
+  <link
+    name="ARD">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.20029" />
+      <inertia
+        ixx="0.00013739"
+        ixy="1.2647E-09"
+        ixz="-8.5796E-10"
+        iyy="0.00022942"
+        iyz="-1.0267E-08"
+        izz="0.00013739" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/ARD.STL" scale="2.25 2.25 2.25" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/ARD.STL" scale="2.25 2.25 2.25" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ARD_joint"
+    type="continuous">
+    <origin
+      xyz="0.268724 0.198856 0.12"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="ARD" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <!--RUEDA IZQ A-->
+  <link
+    name="ARI">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.20022" />
+      <inertia
+        ixx="0.00013738"
+        ixy="-7.8382E-09"
+        ixz="-9.4422E-10"
+        iyy="0.00022942"
+        iyz="7.0508E-09"
+        izz="0.00013738" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/ARI.STL" scale="2.25 2.25 2.25" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/ARI.STL" scale="2.25 2.25 2.25" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ARI_joint"
+    type="continuous">
+    <origin
+      xyz="-0.268724 -0.198856 0.12"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="ARI" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <!--RUEDA DRCHA B-->
+  <link
+    name="BRD">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.20022" />
+      <inertia
+        ixx="0.00013738"
+        ixy="7.29E-09"
+        ixz="-8.7599E-10"
+        iyy="0.00022942"
+        iyz="-7.5627E-09"
+        izz="0.00013738" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/BRD.STL" scale="2.25 2.25 2.25" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/BRD.STL" scale="2.25 2.25 2.25" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BRD_joint"
+    type="continuous">
+    <origin
+      xyz="0.268724 -0.198856 0.12"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="BRD" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <!--RUEDA IZQDA B-->
+  <link
+    name="BRI">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.20029" />
+      <inertia
+        ixx="0.00013738"
+        ixy="-2.2209E-09"
+        ixz="-1.3258E-10"
+        iyy="0.00022942"
+        iyz="1.1069E-08"
+        izz="0.00013739" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/BRI.STL" scale="2.25 2.25 2.25" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/BRI.STL" scale="2.25 2.25 2.25" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BRI_joint"
+    type="continuous">
+    <origin
+      xyz="-0.268724 0.198856 0.12"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="BRI" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <!--CARCASA INSERTAR ACTUADOR-->
+  <link
+    name="ACTUADORCORTO">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.045336" />
+      <inertia
+        ixx="0.00024085"
+        ixy="-3.5448E-12"
+        ixz="-4.3023E-06"
+        iyy="1.5885E-05"
+        iyz="-6.7384E-10"
+        izz="0.0002418" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/ACTUADORCORTO.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.5 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/ACTUADORCORTO.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ACTUADORCORTO_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.26"
+      rpy="0 0 0" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="ACTUADORCORTO" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <!--MÁS CARCASA INSERTAR PALAS(¿?)-->
+  <link
+    name="PALASV2">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.52675" />
+      <inertia
+        ixx="0.0023409"
+        ixy="2.8879E-07"
+        ixz="-0.00018051"
+        iyy="0.0055444"
+        iyz="-7.0668E-08"
+        izz="0.0077521" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/PALASV2.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/PALASV2.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="PALASV2_joint"
+    type="prismatic">
+    <axis xyz="0 0 1" />
+    <limit lower="-0.03" upper="0.1" effort="50.0" velocity="16.0" />
+    <origin
+      xyz="0 0 0.05"
+      rpy="0 0 0" />
+    <parent
+      link="ACTUADORCORTO" />
+    <child
+      link="PALASV2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robotgz>
+<!--MÁS CARCASA INSERTAR ACTUADOR(¿?)-->

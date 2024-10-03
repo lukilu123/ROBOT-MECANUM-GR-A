@@ -4,6 +4,15 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="ROBOT_urdf">
+  <!-- Dummy -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.01 0.01 0.01"/> <!-- Tamaño arbitrario, ya que no lo verás -->
+      </geometry>
+    </visual>
+  </link>
+  <!-- Dummy -->
   <link
     name="CHASSISFULL">
     <inertial>
@@ -26,7 +35,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_project_pkg/model/meshes/CHASSISFULL.stl" scale="0.0025 0.0025 0.0025" />
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/CHASSISFULL.stl" scale="0.0025 0.0025 0.0025" />
       </geometry>
       <material
         name="">
@@ -40,10 +49,232 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://my_project_pkg/model/meshes/CHASSISFULL.stl" scale="0.0025 0.0025 0.0025" />
+          filename="/home/user/project_ws/src/my_project_pkg/model/meshes/CHASSISFULL.stl" scale="0.0025 0.0025 0.0025" />
       </geometry>
     </collision>
   </link>
+   <!-- Joint between the dummy link and CHASSISFULL -->
+  <joint name="base_to_chassis" type="fixed">
+    <parent link="base_link" />
+    <child link="CHASSISFULL" />
+    <origin xyz="0 0 0" rpy="0 0 0" /> <!-- Ubicación del enlace CHASSISFULL respecto al dummy link -->
+  </joint>
+    <!--CARCAZA-->
+  <link
+    name="CUERPO1">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.30841" />
+      <inertia
+        ixx="0.00015661"
+        ixy="-1.7004E-07"
+        ixz="3.939E-07"
+        iyy="0.00045596"
+        iyz="8.2607E-08"
+        izz="0.00038161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_project_pkg/model/meshes/CUERPO1.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.1 0.1 0.1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_project_pkg/model/meshes/CUERPO1.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="CUERPO1_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.26"
+      rpy="0 0 0" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="CUERPO1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>  
+    <!--SOPORTE1-->
+  <link
+    name="SOPORTE1">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.30841" />
+      <inertia
+        ixx="0.00015661"
+        ixy="-1.7004E-07"
+        ixz="3.939E-07"
+        iyy="0.00045596"
+        iyz="8.2607E-08"
+        izz="0.00038161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_project_pkg/model/meshes/SOPORTE1.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_project_pkg/model/meshes/SOPORTE1.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="SOPORTE1_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.26"
+      rpy="0 0 0" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="SOPORTE1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>   
+    <!--SOPORTE2-->
+    <link
+    name="SOPORTE2">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.30841" />
+      <inertia
+        ixx="0.00015661"
+        ixy="-1.7004E-07"
+        ixz="3.939E-07"
+        iyy="0.00045596"
+        iyz="8.2607E-08"
+        izz="0.00038161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_project_pkg/model/meshes/SOPORTE2.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_project_pkg/model/meshes/SOPORTE2.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="SOPORTE2_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.26"
+      rpy="0 0 0" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="SOPORTE2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint> 
+    <!--LIDAR-->
+  <link
+    name="LIDAR">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.30841" />
+      <inertia
+        ixx="0.00015661"
+        ixy="-1.7004E-07"
+        ixz="3.939E-07"
+        iyy="0.00045596"
+        iyz="8.2607E-08"
+        izz="0.00038161" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_project_pkg/model/meshes/LIDAR.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.25 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://my_project_pkg/model/meshes/LIDAR.stl" scale="0.0025 0.0025 0.0025" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LIDAR_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.26"
+      rpy="0 0 0" />
+    <parent
+      link="CHASSISFULL" />
+    <child
+      link="LIDAR" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>   
     <!--RUEDA DER A-->
   <link
     name="ARD">
@@ -356,12 +587,12 @@
     </collision>
   </link>
   <joint
-    name="PALASV2"
+    name="PALASV2_joint"
     type="prismatic">
     <axis xyz="0 0 1" />
-    <limit lower="-0.005" upper="0.5" effort="50.0" velocity="16.0" />
+    <limit lower="-0.03" upper="0.1" effort="50.0" velocity="16.0" />
     <origin
-      xyz="0 0 0.26"
+      xyz="0 0 0.05"
       rpy="0 0 0" />
     <parent
       link="ACTUADORCORTO" />
